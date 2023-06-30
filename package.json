@@ -1,0 +1,72 @@
+{
+  "name": "use-laravel-echo",
+  "version": "0.1.0",
+  "description": "",
+  "main": "./dist/main.cjs.js",
+  "module": "./dist/main.es.js",
+  "typings": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/main.es.js",
+      "require": "./dist/main.cjs.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && vite build",
+    "build:watch": "tsc && vite build --watch",
+    "dev": "vite",
+    "doctoc": "doctoc README.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:EitanElbaz/useLaravelEcho.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto-browserify": "^3.12.0",
+    "laravel-echo": "^1.10.0",
+    "stream-browserify": "^3.0.0",
+    "use-debounce": "^6.0.0",
+    "uuid": "^9.0.0"
+  },
+  "peerDependencies": {
+    "pusher-js": "^7.0.3",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^9.0.2",
+    "@types/node": "^18.11.9",
+    "@types/react": "^18.2.14",
+    "@typescript-eslint/eslint-plugin": "^5.60.1",
+    "@typescript-eslint/parser": "^5.60.1",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-airbnb-typescript": "^10.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^2.3.0",
+    "eslint-import-resolver-webpack": "^0.12.1",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-json": "^2.1.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-unused-imports": "^0.1.3",
+    "prettier": "^2.0.4",
+    "pusher-js": "^7.0.3",
+    "react": "^18.2.0",
+    "rollup-plugin-typescript-paths": "^1.4.0",
+    "source-map-loader": "^0.2.4",
+    "tslib": "^2.4.1",
+    "typescript": "^4.2.3",
+    "vite": "^4.3.9",
+    "vite-plugin-resolve": "^2.3.0"
+  }
+}
