@@ -27,6 +27,7 @@ This library automatically manages your server, channel and event subscriptions 
 
 ## Install
 
+__-- COMING SOON TO NPM --__
 
 ```
 // yarn
