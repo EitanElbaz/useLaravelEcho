@@ -24,9 +24,7 @@ const UseLaravelEchoProvider: React.FC<PropsWithChildren<UseLaravelEchoProps>> =
     );
 
     const setupEcho = useCallback(
-        (_options: Options) => {
-            return new Echo({ ..._options, key: appKey, broadcaster });
-        },
+        (_options: Options) => new Echo({ ..._options, key: appKey, broadcaster }),
         [appKey, broadcaster],
     );
     useEffect(() => {
@@ -50,13 +48,13 @@ const UseLaravelEchoProvider: React.FC<PropsWithChildren<UseLaravelEchoProps>> =
                 memberLeft: 'presence:leaving',
             };
         }
-        if (broadcaster === 'pusher') {
-            return {
-                joined: 'pusher:subscription_succeeded',
-                memberJoined: 'pusher:member_added',
-                memberLeft: 'pusher:member_removed',
-            };
-        }
+        // if (broadcaster === 'pusher') {
+        return {
+            joined: 'pusher:subscription_succeeded',
+            memberJoined: 'pusher:member_added',
+            memberLeft: 'pusher:member_removed',
+        };
+        // }
     }, [broadcaster]);
 
     /**
